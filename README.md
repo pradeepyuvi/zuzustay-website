@@ -14,7 +14,7 @@ zuzustay-website/
     ├── index.html             # Premium coming soon landing page
     ├── 404.html               # Customized 404 error page
     ├── privacy-policy.html    # Branded privacy document
-    ├── Terms-of-Service.html # Branded terms & rules document
+    ├── terms-and-conditions.html # Branded terms & rules document
     ├── robots.txt             # Search engine crawling rules
     ├── sitemap.xml            # Crawler sitemap indices
     ├── manifest.json          # PWA metadata configuration
@@ -25,9 +25,9 @@ zuzustay-website/
         ├── js/
         │   └── main.js        # Dynamic interactive hooks
         ├── images/
-        │   ├── logo.png       # ZUZUStay logo
-        │   ├── bg.png         # Linked Visual fallback
-        │   └── favicon.png    # App icon badge
+        │   ├── logo.svg       # ZUZUStay logo
+        │   ├── bg.webp        # Linked Visual fallback
+        │   └── favicon.ico    # App icon badge
         └── fonts/             # Font storage directory
 ```
 

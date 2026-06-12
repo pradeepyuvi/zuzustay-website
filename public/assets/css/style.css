@@ -94,7 +94,7 @@
 
 body {
   font-family: var(--font-body);
-  background: var(--bg-gradient), url('../images/bg.png') no-repeat center center/cover fixed;
+  background: var(--bg-gradient), url('../images/bg.webp') no-repeat center center/cover fixed;
   color: var(--white);
   min-height: 100vh;
   overflow-y: auto;

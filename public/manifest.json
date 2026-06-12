@@ -4,9 +4,9 @@
   "description": "Smart PG & Rental Property Management platform.",
   "icons": [
     {
-      "src": "/assets/images/favicon.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "/assets/images/logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
     }
   ],
   "start_url": "/",
