@@ -65,7 +65,8 @@ header {
   color: #000000;
 }
 
-.back-btn {
+.back-btn,
+.content-section a.back-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -81,9 +82,11 @@ header {
   cursor: pointer;
 }
 
-.back-btn:hover {
+.back-btn:hover,
+.content-section a.back-btn:hover {
   background-color: #333333;
   border-color: #333333;
+  color: #ffffff;
   transform: translateY(-1px);
 }
 
