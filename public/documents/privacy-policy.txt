@@ -1,0 +1,166 @@
+Privacy Policy
+Effective Date: July 14, 2026
+Last Updated: July 14, 2026
+
+1. Introduction
+Welcome to ZUZUStay ("App", "Service", "we", "our", or "us").
+We respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, store, disclose, and safeguard your information when you use the ZUZUStay mobile application and related services.
+By accessing or using ZUZUStay, you agree to the collection and use of information in accordance with this Privacy Policy.
+
+2. Information We Collect
+2.1 Personal Information
+We may collect the following information:
+Name
+Mobile number
+Profile photograph (if uploaded)
+Property details
+Property address information
+Property photographs (if uploaded)
+Tenant information including:
+Name
+Mobile number
+Email address (if provided)
+Address
+Room assignment details
+Tenant photograph (if uploaded)
+Rental and payment-related information entered by the user
+Account authentication information
+Tenant management information may include:
+Occupancy records
+Room assignments
+Check-in and check-out records
+Blocked tenant records
+Block reasons entered by authorized users
+Tenant contact information and communication details entered by authorized property managers
+Property owners and managers are solely responsible for obtaining all required permissions, notices, and consents from tenants before uploading tenant personal information, photographs, addresses, contact details, documents, or related records to ZUZUStay.
+Users are responsible for ensuring that information entered into tenant block records is lawful, accurate, and necessary for legitimate property management purposes.
+
+2.2 Authentication Information
+We use mobile number verification through One-Time Passwords (OTP) to authenticate users and secure access to accounts.
+
+2.3 Usage Information
+We may automatically collect:
+Device model
+Device operating system
+Application version
+App usage statistics
+Crash reports
+Diagnostic information
+Performance metrics
+
+2.4 Device Permissions
+Depending on the device and operating system version, ZUZUStay may request access to:
+Notifications – to provide reminders, important updates, payment-related alerts, and service notifications.
+Camera – to capture profile photographs, property photographs, and tenant photographs where applicable.
+Photos / Media Library – to allow users to select and upload images from their device.
+Certain Android devices may use the system Photo Picker, which allows users to select images without granting full photo library access.
+Permissions are requested only when required for specific features and may be managed through device settings at any time.
+
+3. How We Use Your Information
+We use collected information to:
+Provide and maintain ZUZUStay services
+Manage properties, rooms, tenants, and occupancy records
+Track rental payments and related information
+Enable tenant management features
+Send important notifications and updates
+Improve application performance and user experience
+Provide customer support
+Detect and prevent fraud, abuse, security incidents, and unauthorized activity
+Comply with legal obligations
+
+4. Information Sharing
+We do not sell your personal information.
+We may share information in the following situations:
+With your consent
+To comply with legal obligations
+To protect our rights, users, or property
+With trusted service providers that help us operate the application
+During a merger, acquisition, restructuring, or sale of business assets
+Service providers may include:
+Authentication providers
+Cloud hosting providers
+Analytics providers
+Data storage providers
+Notification service providers
+All service providers are required to maintain appropriate confidentiality and security protections.
+
+5. Third-Party Services
+ZUZUStay may use third-party services including:
+Firebase Authentication
+Firebase Cloud Messaging
+Firebase Analytics
+Firebase Crashlytics
+Cloud storage providers
+Firebase services are provided by Google and may process authentication, analytics, crash reporting, notification delivery, and related operational information.
+These third-party services may collect, process, and store information according to their own privacy policies and terms.
+
+6. Data Security
+We implement reasonable security measures including:
+Secure authentication mechanisms
+Access controls and authorization policies
+Data encryption during transmission
+Regular security updates and monitoring
+Secure cloud infrastructure
+While we strive to protect your information, no method of transmission or storage is completely secure, and we cannot guarantee absolute security.
+
+7. Your Rights
+Depending on applicable law, you may have the right to:
+Access your personal information
+Correct inaccurate information
+Request deletion of your account
+Request deletion of your personal data
+Withdraw consent where applicable
+Contact us regarding privacy concerns
+
+8. Account and Data Deletion
+Users may submit an account deletion request directly through the Profile section of the application using the available Delete Account feature.
+Upon submission, the deletion request may be reviewed for fraud prevention, unauthorized account removal, platform security, misuse prevention, or compliance purposes.
+The deletion request enters a processing period of up to 30 days.
+During this period:
+Users may continue to access their account where permitted.
+Users may withdraw the deletion request by logging in and selecting the available account retrieval option.
+Account deletion will not be completed if the request is withdrawn before processing is finalized.
+If the deletion request is not withdrawn, the account and associated data will be deleted within 30 days from the original request date, except where retention is required by applicable laws, regulatory obligations, dispute resolution requirements, fraud prevention, security purposes, or legitimate business needs.
+Deletion may include removal of:
+Account information
+Properties
+Rooms
+Tenant records
+Payment tracking information
+Occupancy records
+Check-in and check-out records
+Blocklist records
+Uploaded photographs
+Related account data
+Users may also contact us at admin@zuzustay.com for assistance regarding account deletion requests.
+
+9. Data Retention
+We retain personal information only for as long as necessary to provide our services and comply with legal obligations.
+After account deletion, data will generally be removed within 30 days, except where retention is required by:
+Applicable laws
+Regulatory requirements
+Security obligations
+Fraud prevention requirements
+Dispute resolution requirements
+Legitimate business purposes
+
+10. Children's Privacy
+ZUZUStay is intended solely for property owners, managers, operators, and authorized staff involved in property management activities.
+The application is intended for users who are 18 years of age or older.
+We do not knowingly collect personal information directly from children under 13 years of age. If we become aware that such information has been collected without appropriate authorization, we will take reasonable steps to delete it.
+
+11. Changes to This Privacy Policy
+We may update this Privacy Policy from time to time.
+Updated versions will be posted within the application and/or on our website together with an updated Last Updated date.
+Continued use of ZUZUStay after changes become effective constitutes acceptance of the updated Privacy Policy.
+
+12. Contact Us
+If you have any questions regarding this Privacy Policy, please contact:
+Service Name: ZUZUStay
+ Website: https://zuzustay.com
+ Email: admin@zuzustay.com
+ Phone: +91 7036361010
+ Business Address: Bengaluru, Karnataka, India
+
+By using ZUZUStay, you acknowledge that you have read, understood, and agreed to this Privacy Policy.
+
