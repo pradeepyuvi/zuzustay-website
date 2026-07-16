@@ -59,10 +59,20 @@ header {
 }
 
 .brand-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 1.25rem;
   font-weight: 600;
   text-decoration: none;
   color: #000000;
+}
+
+.logo-icon {
+  height: 32px;
+  width: 32px;
+  border-radius: 6px;
+  object-fit: cover;
 }
 
 .back-btn,
