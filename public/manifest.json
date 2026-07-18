@@ -1,0 +1,17 @@
+{
+  "short_name": "ZUZUStay",
+  "name": "ZUZUStay Property Management",
+  "description": "Smart PG & Rental Property Management platform.",
+  "icons": [
+    {
+      "src": "/assets/images/logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0d1b2a",
+  "theme_color": "#00a8ff",
+  "display": "standalone",
+  "orientation": "portrait"
+}
