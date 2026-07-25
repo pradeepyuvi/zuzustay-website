@@ -73,36 +73,36 @@
 :root {
   /* Brand colors */
   --primary: #0A728A;
-  --secondary: #2C4B64;
-  --accent: #14D8FF;
-  --accent-light: #80E9FF;
-  --accent-dark: #074E5F;
+  --secondary: #1E293B;
+  --accent: #0EA5E9;
+  --accent-light: #38BDF8;
+  --accent-dark: #0369A1;
   --white: #ffffff;
-  --background: #060E14; /* Deep Space-Dark Background */
-  --text-dark: #F8FBFC;  /* Light text for high contrast */
-  --text-light: #A0AEC0; /* Muted light text */
+  --background: #0A0E17; /* Deep Obsidian Slate Canvas */
+  --text-dark: #F8FAFC;  /* Crisp light text for high legibility */
+  --text-light: #94A3B8; /* Refined muted slate text */
 
-  /* HSL mappings for gradients and translucent borders */
+  /* HSL mappings */
   --primary-hsl: 192, 91%, 29%;
-  --secondary-hsl: 207, 39%, 28%;
-  --accent-hsl: 190, 100%, 54%;
+  --secondary-hsl: 215, 33%, 17%;
+  --accent-hsl: 199, 89%, 48%;
 
-  /* Theme mapping (Premium Dark Cosmic by default) */
-  --theme-bg: var(--background);
+  /* Premium Clean Dark Theme Variables */
+  --theme-bg: #0A0E17;
   --theme-text: var(--text-dark);
   --theme-text-muted: var(--text-light);
-  --theme-card-bg: rgba(11, 23, 32, 0.55);
-  --theme-card-border: rgba(20, 216, 255, 0.15);
-  --theme-nav-bg: rgba(6, 14, 20, 0.75);
-  --theme-nav-border: rgba(20, 216, 255, 0.12);
-  --theme-footer-bg: #03080C;
-  --theme-footer-text: #F8FBFC;
-  --bg-gradient: radial-gradient(circle at 50% 50%, rgba(10, 114, 138, 0.15) 0%, rgba(6, 14, 20, 1) 85%);
+  --theme-card-bg: rgba(16, 22, 34, 0.65);
+  --theme-card-border: rgba(255, 255, 255, 0.08);
+  --theme-nav-bg: rgba(10, 14, 23, 0.85);
+  --theme-nav-border: rgba(255, 255, 255, 0.08);
+  --theme-footer-bg: #070A10;
+  --theme-footer-text: #F8FAFC;
+  --bg-gradient: radial-gradient(1200px circle at 50% -100px, rgba(14, 165, 233, 0.1) 0%, rgba(10, 14, 23, 0) 70%);
 
-  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 10px 25px -3px rgba(0, 0, 0, 0.55), 0 4px 12px -2px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 30px 60px rgba(0, 0, 0, 0.7);
-  --shadow-glow: 0 0 30px rgba(20, 216, 255, 0.3);
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 10px 25px -3px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 25px rgba(14, 165, 233, 0.25);
 
   --font-display: 'Outfit', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -113,9 +113,9 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --theme-card-bg: rgba(11, 23, 32, 0.65);
-    --theme-card-border: rgba(20, 216, 255, 0.2);
-    --shadow-glow: 0 0 35px rgba(20, 216, 255, 0.4);
+    --theme-card-bg: rgba(16, 22, 34, 0.7);
+    --theme-card-border: rgba(255, 255, 255, 0.1);
+    --shadow-glow: 0 0 30px rgba(14, 165, 233, 0.3);
   }
 }
 
@@ -129,8 +129,12 @@
 
 body {
   font-family: var(--font-body);
-  background: var(--theme-bg);
-  background-image: var(--bg-gradient);
+  background-color: var(--theme-bg);
+  background-image: 
+    radial-gradient(1200px circle at 50% -100px, rgba(14, 165, 233, 0.1) 0%, rgba(10, 14, 23, 0) 70%),
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 100% 100%, 60px 60px, 60px 60px;
   background-attachment: fixed;
   color: var(--theme-text);
   min-height: 100vh;
@@ -138,23 +142,12 @@ body {
   overflow-y: auto;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
-  transition: background-color 0.3s ease, color 0.3s ease;
   position: relative;
 }
 
-/* Cosmic Backdrop Image Overlay */
+/* Remove image overlay completely */
 body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: url('../images/cosmic_bg.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.38;
-  mix-blend-mode: screen;
-  z-index: -2;
-  pointer-events: none;
+  display: none !important;
 }
 
 /* Background Wrapper */
@@ -3724,7 +3717,7 @@ section {
 
 .site-footer {
   position: relative;
-  background: #03080C !important;
+  background: #070A10 !important;
   border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
   z-index: 5;
 }
@@ -3734,21 +3727,20 @@ section {
   position: absolute;
   inset: 0;
   background-image: 
-    linear-gradient(rgba(20, 216, 255, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(20, 216, 255, 0.02) 1px, transparent 1px);
-  background-size: 40px 40px;
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 60px 60px;
   background-position: center top;
   pointer-events: none;
   z-index: -1;
 }
 
-@keyframes floatGlow {
-  0% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(-30px, 40px) scale(1.1); }
-  100% { transform: translate(20px, -20px) scale(0.95); }
-}
-
-@keyframes gridPulse {
-  0% { opacity: 0.65; transform: scale(1); }
-  100% { opacity: 0.95; transform: scale(1.03); }
+/* Hide legacy background graphics for a simple, ultra-clean premium look */
+.blob-container,
+.morphing-blob-container,
+.showcase-sonar,
+.showcase-bg-glow,
+.property-bg-blueprint,
+.hero-mesh-glow {
+  display: none !important;
 }
