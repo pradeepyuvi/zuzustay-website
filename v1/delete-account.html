@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Request account and data deletion for your ZUZUStay account. Learn the deletion steps or send a direct request.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Delete Account Request - ZUZUStay">
+  <meta property="og:description"
+    content="Request account and data deletion for your ZUZUStay account.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zuzustay.com/delete-account.html">
+
+  <title>Delete Account Request - ZUZUStay</title>
+  <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/logo.svg?v=3">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/legal.css?v=5">
+  <style>
+    .deletion-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 2.5rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      margin-top: 1.5rem;
+    }
+
+    .steps-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .steps-heading {
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #0284c7;
+      margin-bottom: 1rem;
+    }
+
+    .steps-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .steps-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.85rem;
+      font-size: 1rem;
+      color: #334155;
+      line-height: 1.5;
+    }
+
+    .step-num {
+      background: #0284c7;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.8rem;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .process-note {
+      margin-top: 1.25rem;
+      padding-top: 1rem;
+      border-top: 1px dashed #cbd5e1;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #0369a1;
+      text-align: center;
+    }
+
+    .form-section {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .form-label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #1e293b;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      color: #0f172a;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    .form-input:focus {
+      border-color: #0284c7;
+      box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.75rem;
+    }
+
+    .btn-send {
+      flex: 1;
+      background: #dc2626;
+      color: #ffffff;
+      border: none;
+      padding: 0.85rem 1.5rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      transition: background 0.2s ease, transform 0.1s ease;
+    }
+
+    .btn-send:hover {
+      background: #b91c1c;
+      transform: translateY(-1px);
+    }
+
+    .btn-cancel {
+      flex: 1;
+      background: #f1f5f9;
+      color: #334155;
+      border: 1px solid #cbd5e1;
+      padding: 0.85rem 1.5rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+
+    .btn-cancel:hover {
+      background: #e2e8f0;
+      color: #0f172a;
+    }
+
+    .status-msg {
+      margin-top: 1rem;
+      padding: 0.85rem 1rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      display: none;
+    }
+
+    .status-msg.success {
+      display: block;
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      color: #166534;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="legal-container">
+
+    <!-- Top Navigation Header -->
+    <header>
+      <a href="/" class="brand-title">
+        <img src="/assets/images/logo.svg" alt="ZUZUStay Logo" class="logo-icon">
+        <span>ZUZUStay</span>
+      </a>
+      <a href="/" class="back-btn" id="back-to-home-top">Back to Home</a>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="content-section">
+      <h1>Account Deletion Request</h1>
+
+      <p>If you wish to delete your ZUZUStay account and associated data, please follow the steps outlined below within the ZUZUStay mobile application.</p>
+
+      <div class="deletion-card">
+        
+        <!-- Mobile App Steps -->
+        <div class="steps-box" style="margin-bottom: 1.5rem;">
+          <div class="steps-heading">Mobile App Account Deletion Process</div>
+          <ol class="steps-list">
+            <li>
+              <span class="step-num">1</span>
+              <span>Open ZUZUStay mobile app</span>
+            </li>
+            <li>
+              <span class="step-num">2</span>
+              <span>Login with registered Mobile Number and OTP</span>
+            </li>
+            <li>
+              <span class="step-num">3</span>
+              <span>Click Profile</span>
+            </li>
+            <li>
+              <span class="step-num">4</span>
+              <span>Click Delete Account Request</span>
+            </li>
+          </ol>
+          <div class="process-note">
+            This is the Delete Account Request process.
+          </div>
+        </div>
+
+        <div class="action-buttons" style="justify-content: center; margin-top: 1.5rem;">
+          <a href="/" class="btn-cancel" style="max-width: 220px;">Cancel (Back to Home)</a>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      &copy; 2026 ZUZUStay. All rights reserved.
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
