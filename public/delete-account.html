@@ -18,7 +18,8 @@
   <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
   <link rel="icon" type="image/svg+xml" href="/assets/images/logo.svg?v=3">
 
-  <!-- Legal Page Stylesheet -->
+  <!-- Core & Legal Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/shimmer.css?v=1.0">
   <link rel="stylesheet" href="/assets/css/legal.css?v=5">
   <style>
     .deletion-card {
@@ -193,51 +194,80 @@
 
     <!-- Top Navigation Header -->
     <header>
-      <a href="/" class="brand-title">
-        <img src="/assets/images/logo.svg" alt="ZUZUStay Logo" class="logo-icon">
-        <span>ZUZUStay</span>
-      </a>
-      <a href="/" class="back-btn" id="back-to-home-top">Back to Home</a>
+      <div class="shimmer-wrapper">
+        <div class="shimmer-placeholder" style="flex-direction: row; justify-content: space-between; align-items: center;">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <div class="shimmer-avatar" style="width: 32px; height: 32px;"></div>
+            <div class="shimmer-heading w-40" style="margin:0;"></div>
+          </div>
+          <div class="shimmer-btn" style="height: 36px; width: 120px;"></div>
+        </div>
+        <div class="shimmer-real-content" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+          <a href="/" class="brand-title">
+            <img src="/assets/images/logo.svg" alt="ZUZUStay Logo" class="logo-icon">
+            <span>ZUZUStay</span>
+          </a>
+          <a href="/" class="back-btn" id="back-to-home-top">Back to Home</a>
+        </div>
+      </div>
     </header>
 
     <!-- Main Content Area -->
     <main class="content-section">
-      <h1>Account Deletion Request</h1>
-
-      <p>If you wish to delete your ZUZUStay account and associated data, please follow the steps outlined below within the ZUZUStay mobile application.</p>
+      <div class="shimmer-wrapper">
+        <div class="shimmer-placeholder">
+          <div class="shimmer-title w-70"></div>
+          <div class="shimmer-text w-100"></div>
+          <div class="shimmer-text w-90"></div>
+        </div>
+        <div class="shimmer-real-content">
+          <h1>Account Deletion Request</h1>
+          <p>If you wish to delete your ZUZUStay account and associated data, please follow the steps outlined below within the ZUZUStay mobile application.</p>
+        </div>
+      </div>
 
       <div class="deletion-card">
-        
-        <!-- Mobile App Steps -->
-        <div class="steps-box" style="margin-bottom: 1.5rem;">
-          <div class="steps-heading">Mobile App Account Deletion Process</div>
-          <ol class="steps-list">
-            <li>
-              <span class="step-num">1</span>
-              <span>Open ZUZUStay mobile app</span>
-            </li>
-            <li>
-              <span class="step-num">2</span>
-              <span>Login with registered Mobile Number and OTP</span>
-            </li>
-            <li>
-              <span class="step-num">3</span>
-              <span>Click Profile</span>
-            </li>
-            <li>
-              <span class="step-num">4</span>
-              <span>Click Delete Account Request</span>
-            </li>
-          </ol>
-          <div class="process-note">
-            This is the Delete Account Request process.
+        <div class="shimmer-wrapper">
+          <div class="shimmer-placeholder">
+            <div class="shimmer-heading w-50"></div>
+            <div class="shimmer-text w-100"></div>
+            <div class="shimmer-text w-90"></div>
+            <div class="shimmer-text w-80"></div>
+            <div class="shimmer-text w-85"></div>
+            <div class="shimmer-btn w-50" style="margin: 1rem auto 0 auto;"></div>
+          </div>
+          <div class="shimmer-real-content">
+            <!-- Mobile App Steps -->
+            <div class="steps-box" style="margin-bottom: 1.5rem;">
+              <div class="steps-heading">Mobile App Account Deletion Process</div>
+              <ol class="steps-list">
+                <li>
+                  <span class="step-num">1</span>
+                  <span>Open ZUZUStay mobile app</span>
+                </li>
+                <li>
+                  <span class="step-num">2</span>
+                  <span>Login with registered Mobile Number and OTP</span>
+                </li>
+                <li>
+                  <span class="step-num">3</span>
+                  <span>Click Profile</span>
+                </li>
+                <li>
+                  <span class="step-num">4</span>
+                  <span>Click Delete Account Request</span>
+                </li>
+              </ol>
+              <div class="process-note">
+                This is the Delete Account Request process.
+              </div>
+            </div>
+
+            <div class="action-buttons" style="justify-content: center; margin-top: 1.5rem;">
+              <a href="/" class="btn-cancel" style="max-width: 220px;">Cancel (Back to Home)</a>
+            </div>
           </div>
         </div>
-
-        <div class="action-buttons" style="justify-content: center; margin-top: 1.5rem;">
-          <a href="/" class="btn-cancel" style="max-width: 220px;">Cancel (Back to Home)</a>
-        </div>
-
       </div>
     </main>
 
@@ -254,6 +284,7 @@
 
   </div>
 
+  <script src="/assets/js/shimmer.js?v=1.0"></script>
 </body>
 
 </html>

@@ -4,10 +4,9 @@
 window.addEventListener('load', () => {
   const preloader = document.getElementById('preloader');
   if (preloader) {
-    // Deliberate 1.2s preloader show time for premium feel
     setTimeout(() => {
       preloader.classList.add('fade-out');
-    }, 1200);
+    }, 600);
   }
 });
 
@@ -129,6 +128,12 @@ document.addEventListener('DOMContentLoaded', () => {
       const targetScreen = document.getElementById(targetId);
       if (targetScreen) {
         targetScreen.classList.add('active');
+      }
+
+      // Trigger crisp shimmer feedback on showcase screen container
+      const browserFrame = document.querySelector('.showcase-browser-frame');
+      if (browserFrame && window.ZuzuShimmer) {
+        window.ZuzuShimmer.triggerLoading(browserFrame, 400);
       }
     });
   });

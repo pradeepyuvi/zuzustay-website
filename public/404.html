@@ -9,8 +9,9 @@
 
   <title>Page Not Found | ZUZUStay</title>
 
-  <!-- Favicons -->
+  <!-- Favicons & Styles -->
   <link rel="icon" type="image/svg+xml" href="/assets/images/logo.svg?v=3">
+  <link rel="stylesheet" href="/assets/css/shimmer.css?v=1.0">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
@@ -33,11 +34,21 @@
     <!-- Error Card Content -->
     <main class="error-page">
       <div class="error-card">
-        <div class="error-code">404</div>
-        <h2 class="error-title">Page Not Found</h2>
-        <p class="error-desc">The page you are looking for might have been removed, had its name changed, or is
-          temporarily unavailable.</p>
-        <a href="/" class="back-btn">Back to Home</a>
+        <div class="shimmer-wrapper">
+          <div class="shimmer-placeholder" style="align-items: center;">
+            <div class="shimmer-title w-40" style="height: 3.5rem;"></div>
+            <div class="shimmer-heading w-60"></div>
+            <div class="shimmer-text w-90"></div>
+            <div class="shimmer-btn w-40" style="margin-top: 1rem;"></div>
+          </div>
+          <div class="shimmer-real-content">
+            <div class="error-code">404</div>
+            <h2 class="error-title">Page Not Found</h2>
+            <p class="error-desc">The page you are looking for might have been removed, had its name changed, or is
+              temporarily unavailable.</p>
+            <a href="/" class="back-btn">Back to Home</a>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -55,6 +66,7 @@
 
   </div>
 
+  <script src="/assets/js/shimmer.js?v=1.0"></script>
 </body>
 
 </html>

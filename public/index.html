@@ -30,7 +30,8 @@
   <link rel="icon" type="image/svg+xml" href="/assets/images/logo.svg?v=3">
   <link rel="apple-touch-icon" href="/assets/images/logo.svg?v=3">
 
-  <!-- Core Stylesheet -->
+  <!-- Core Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/shimmer.css?v=1.0">
   <link rel="stylesheet" href="/assets/css/style.css?v=1.5">
 </head>
 
@@ -49,8 +50,6 @@
 
   <!-- Scroll Progress Indicator -->
   <div class="scroll-progress-bar" id="scroll-progress"></div>
-
-
 
   <!-- Navigation Bar -->
   <nav class="navbar" id="navbar">
@@ -78,45 +77,87 @@
     <div class="hero-mesh-glow"></div>
     <div class="container hero-grid">
       <div class="hero-text reveal-on-scroll">
-        <h1 class="hero-heading">Manage Properties Smarter. <span>Grow Faster.</span></h1>
-        <p class="hero-subheading">
-          Manage PGs, Hotels, Resorts, Hostels and Rental Properties from one powerful platform. Log payments, track room statuses, verify occupancy stats, and track tenant rosters in real-time. (Note: Payment is noted and tracked monthly in the app; no direct financial transactions are processed in the app).
-        </p>
-        <div class="hero-ctas">
-          <!-- Google Play Download Button -->
-          <a href="#download" class="store-badge-link">
-            <img src="/assets/images/store_images/android.svg" alt="Get it on Google Play" class="store-badge-img">
-          </a>
-          <!-- App Store Download Button -->
-          <a href="#download" class="store-badge-link">
-            <img src="/assets/images/store_images/ios.svg" alt="Download on the App Store" class="store-badge-img">
-          </a>
+        <div class="shimmer-wrapper">
+          <div class="shimmer-placeholder">
+            <div class="shimmer-title w-90"></div>
+            <div class="shimmer-text w-100"></div>
+            <div class="shimmer-text w-90"></div>
+            <div class="shimmer-text w-75"></div>
+            <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+              <div class="shimmer-btn"></div>
+              <div class="shimmer-btn"></div>
+            </div>
+          </div>
+          <div class="shimmer-real-content">
+            <h1 class="hero-heading">Manage Properties Smarter. <span>Grow Faster.</span></h1>
+            <p class="hero-subheading">
+              Manage PGs, Hotels, Resorts, Hostels and Rental Properties from one powerful platform. Log payments, track room statuses, verify occupancy stats, and track tenant rosters in real-time. (Note: Payment is noted and tracked monthly in the app; no direct financial transactions are processed in the app).
+            </p>
+            <div class="hero-ctas">
+              <!-- Google Play Download Button -->
+              <a href="#download" class="store-badge-link">
+                <img src="/assets/images/store_images/android.svg" alt="Get it on Google Play" class="store-badge-img">
+              </a>
+              <!-- App Store Download Button -->
+              <a href="#download" class="store-badge-link">
+                <img src="/assets/images/store_images/ios.svg" alt="Download on the App Store" class="store-badge-img">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
+
       <!-- App Showcase Phone Mockup with floating statistics -->
       <div class="hero-mockup">
-        <div class="phone-mockup-wrapper">
+        <div class="phone-mockup-wrapper shimmer-overlay-container">
           <div class="phone-mockup-screen">
             <img src="/assets/images/home/home.png" alt="ZUZUStay App Home Screen" class="phone-mockup-image">
           </div>
         </div>
         <!-- Floating Occupancy Card -->
         <div class="floating-card card-occupancy">
-          <span class="floating-card-badge">Check-ins</span>
-          <span class="floating-card-value">64%</span>
-          <span class="floating-card-label">Monthly Check-ins Rate</span>
+          <div class="shimmer-wrapper">
+            <div class="shimmer-placeholder">
+              <div class="shimmer-badge"></div>
+              <div class="shimmer-heading w-60"></div>
+              <div class="shimmer-text w-80"></div>
+            </div>
+            <div class="shimmer-real-content">
+              <span class="floating-card-badge">Check-ins</span>
+              <span class="floating-card-value">64%</span>
+              <span class="floating-card-label">Monthly Check-ins Rate</span>
+            </div>
+          </div>
         </div>
         <!-- Floating Properties Card -->
         <div class="floating-card card-revenue">
-          <span class="floating-card-badge">Properties</span>
-          <span class="floating-card-value">5</span>
-          <span class="floating-card-label">5 Active Locations</span>
+          <div class="shimmer-wrapper">
+            <div class="shimmer-placeholder">
+              <div class="shimmer-badge"></div>
+              <div class="shimmer-heading w-60"></div>
+              <div class="shimmer-text w-80"></div>
+            </div>
+            <div class="shimmer-real-content">
+              <span class="floating-card-badge">Properties</span>
+              <span class="floating-card-value">5</span>
+              <span class="floating-card-label">5 Active Locations</span>
+            </div>
+          </div>
         </div>
         <!-- Floating Active Tenants Card -->
         <div class="floating-card card-activity">
-          <span class="floating-card-badge">Tenants</span>
-          <span class="floating-card-value">120</span>
-          <span class="floating-card-label">120 Registered Tenants</span>
+          <div class="shimmer-wrapper">
+            <div class="shimmer-placeholder">
+              <div class="shimmer-badge"></div>
+              <div class="shimmer-heading w-60"></div>
+              <div class="shimmer-text w-80"></div>
+            </div>
+            <div class="shimmer-real-content">
+              <span class="floating-card-badge">Tenants</span>
+              <span class="floating-card-value">120</span>
+              <span class="floating-card-label">120 Registered Tenants</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -152,22 +193,46 @@
         </div>
       </div>
 
-      <!-- Stats Cards Section (4th removed, moved here) -->
+      <!-- Stats Cards Section -->
       <div class="stats-mini-grid">
         <!-- Stat 1 -->
         <div class="stat-card glass-card">
-          <div class="stat-number"><span class="counter" data-count="1000">0</span>+</div>
-          <div class="stat-label">Properties Managed</div>
+          <div class="shimmer-wrapper">
+            <div class="shimmer-placeholder">
+              <div class="shimmer-heading w-50" style="margin: 0 auto;"></div>
+              <div class="shimmer-text w-80" style="margin: 0 auto;"></div>
+            </div>
+            <div class="shimmer-real-content">
+              <div class="stat-number"><span class="counter" data-count="1000">0</span>+</div>
+              <div class="stat-label">Properties Managed</div>
+            </div>
+          </div>
         </div>
         <!-- Stat 2 -->
         <div class="stat-card glass-card">
-          <div class="stat-number"><span class="counter" data-count="5000">0</span>+</div>
-          <div class="stat-label">Rooms Optimized</div>
+          <div class="shimmer-wrapper">
+            <div class="shimmer-placeholder">
+              <div class="shimmer-heading w-50" style="margin: 0 auto;"></div>
+              <div class="shimmer-text w-80" style="margin: 0 auto;"></div>
+            </div>
+            <div class="shimmer-real-content">
+              <div class="stat-number"><span class="counter" data-count="5000">0</span>+</div>
+              <div class="stat-label">Rooms Optimized</div>
+            </div>
+          </div>
         </div>
         <!-- Stat 3 -->
         <div class="stat-card glass-card">
-          <div class="stat-number"><span class="counter" data-count="10000">0</span>+</div>
-          <div class="stat-label">Happy Tenants</div>
+          <div class="shimmer-wrapper">
+            <div class="shimmer-placeholder">
+              <div class="shimmer-heading w-50" style="margin: 0 auto;"></div>
+              <div class="shimmer-text w-80" style="margin: 0 auto;"></div>
+            </div>
+            <div class="shimmer-real-content">
+              <div class="stat-number"><span class="counter" data-count="10000">0</span>+</div>
+              <div class="stat-label">Happy Tenants</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -185,39 +250,99 @@
       <div class="property-grid">
         <!-- PG Management -->
         <div class="property-card glass-card">
-          <div class="property-icon-wrapper">🏢</div>
-          <h3 class="property-card-title">PG Management</h3>
-          <p class="property-card-desc">Track sharing rooms, food preferences, daily operations, and automate recurring monthly rent collections.</p>
+          <div class="shimmer-wrapper">
+            <div class="shimmer-placeholder">
+              <div class="shimmer-icon-square"></div>
+              <div class="shimmer-heading w-60"></div>
+              <div class="shimmer-text w-100"></div>
+              <div class="shimmer-text w-80"></div>
+            </div>
+            <div class="shimmer-real-content">
+              <div class="property-icon-wrapper">🏢</div>
+              <h3 class="property-card-title">PG Management</h3>
+              <p class="property-card-desc">Track sharing rooms, food preferences, daily operations, and automate recurring monthly rent collections.</p>
+            </div>
+          </div>
         </div>
         <!-- Hotel Management -->
         <div class="property-card glass-card">
-          <div class="property-icon-wrapper">🏨</div>
-          <h3 class="property-card-title">Hotel Management</h3>
-          <p class="property-card-desc">Manage room status, quick check-ins, guest billing, and staff allocations in real-time.</p>
+          <div class="shimmer-wrapper">
+            <div class="shimmer-placeholder">
+              <div class="shimmer-icon-square"></div>
+              <div class="shimmer-heading w-60"></div>
+              <div class="shimmer-text w-100"></div>
+              <div class="shimmer-text w-80"></div>
+            </div>
+            <div class="shimmer-real-content">
+              <div class="property-icon-wrapper">🏨</div>
+              <h3 class="property-card-title">Hotel Management</h3>
+              <p class="property-card-desc">Manage room status, quick check-ins, guest billing, and staff allocations in real-time.</p>
+            </div>
+          </div>
         </div>
         <!-- Resort Management -->
         <div class="property-card glass-card">
-          <div class="property-icon-wrapper">🌴</div>
-          <h3 class="property-card-title">Resort Management</h3>
-          <p class="property-card-desc">Coordinate cabin allocations, operational amenities, group reservations, and guest checkout checklists.</p>
+          <div class="shimmer-wrapper">
+            <div class="shimmer-placeholder">
+              <div class="shimmer-icon-square"></div>
+              <div class="shimmer-heading w-60"></div>
+              <div class="shimmer-text w-100"></div>
+              <div class="shimmer-text w-80"></div>
+            </div>
+            <div class="shimmer-real-content">
+              <div class="property-icon-wrapper">🌴</div>
+              <h3 class="property-card-title">Resort Management</h3>
+              <p class="property-card-desc">Coordinate cabin allocations, operational amenities, group reservations, and guest checkout checklists.</p>
+            </div>
+          </div>
         </div>
         <!-- Hostel Management -->
         <div class="property-card glass-card">
-          <div class="property-icon-wrapper">🎒</div>
-          <h3 class="property-card-title">Hostel Management</h3>
-          <p class="property-card-desc">Assign bunk beds, track short-stay guests, manage transient occupancy rates, and social spaces.</p>
+          <div class="shimmer-wrapper">
+            <div class="shimmer-placeholder">
+              <div class="shimmer-icon-square"></div>
+              <div class="shimmer-heading w-60"></div>
+              <div class="shimmer-text w-100"></div>
+              <div class="shimmer-text w-80"></div>
+            </div>
+            <div class="shimmer-real-content">
+              <div class="property-icon-wrapper">🎒</div>
+              <h3 class="property-card-title">Hostel Management</h3>
+              <p class="property-card-desc">Assign bunk beds, track short-stay guests, manage transient occupancy rates, and social spaces.</p>
+            </div>
+          </div>
         </div>
         <!-- Building Management -->
         <div class="property-card glass-card">
-          <div class="property-icon-wrapper">🏘️</div>
-          <h3 class="property-card-title">Building Management</h3>
-          <p class="property-card-desc">Organize commercial complexes or residential blocks, tracking maintenance records and utility invoices.</p>
+          <div class="shimmer-wrapper">
+            <div class="shimmer-placeholder">
+              <div class="shimmer-icon-square"></div>
+              <div class="shimmer-heading w-60"></div>
+              <div class="shimmer-text w-100"></div>
+              <div class="shimmer-text w-80"></div>
+            </div>
+            <div class="shimmer-real-content">
+              <div class="property-icon-wrapper">🏘️</div>
+              <h3 class="property-card-title">Building Management</h3>
+              <p class="property-card-desc">Organize commercial complexes or residential blocks, tracking maintenance records and utility invoices.</p>
+            </div>
+          </div>
         </div>
         <!-- Rental Property Management -->
         <div class="property-card glass-card">
-          <div class="property-icon-wrapper">🔑</div>
-          <h3 class="property-card-title">Rental Properties</h3>
-          <p class="property-card-desc">Handle single condos, multi-tenant villas, agreement tracking, and automated security deposits.</p>
+          <div class="shimmer-wrapper">
+            <div class="shimmer-placeholder">
+              <div class="shimmer-icon-square"></div>
+              <div class="shimmer-heading w-60"></div>
+              <div class="shimmer-text w-100"></div>
+              <div class="shimmer-text w-80"></div>
+            </div>
+            <div class="shimmer-real-content">
+              <div class="property-icon-wrapper">🔑</div>
+              <h3 class="property-card-title">Rental Properties</h3>
+              <p class="property-card-desc">Handle single condos, multi-tenant villas, agreement tracking, and automated security deposits.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -236,52 +361,94 @@
         <div class="features-column">
           <!-- Room Management -->
           <div class="showcase-feature-card">
-            <div class="feature-icon-circle icon-orange">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                <polyline points="9 22 9 12 15 12 15 22"/>
-              </svg>
-            </div>
-            <div class="showcase-feature-card-content">
-              <h3 class="showcase-feature-title">Room Management</h3>
-              <p class="showcase-feature-desc">Keep track of every room with ease – add, update, and monitor availability in just a few clicks.</p>
-              <a href="#download" class="showcase-feature-link">Learn more &rarr;</a>
+            <div class="shimmer-wrapper">
+              <div class="shimmer-placeholder">
+                <div style="display: flex; gap: 1rem;">
+                  <div class="shimmer-icon-square"></div>
+                  <div style="flex: 1;">
+                    <div class="shimmer-heading w-60"></div>
+                    <div class="shimmer-text w-100"></div>
+                    <div class="shimmer-text w-40"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="shimmer-real-content">
+                <div class="feature-icon-circle icon-orange">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                    <polyline points="9 22 9 12 15 12 15 22"/>
+                  </svg>
+                </div>
+                <div class="showcase-feature-card-content">
+                  <h3 class="showcase-feature-title">Room Management</h3>
+                  <p class="showcase-feature-desc">Keep track of every room with ease – add, update, and monitor availability in just a few clicks.</p>
+                  <a href="#download" class="showcase-feature-link">Learn more &rarr;</a>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Payment Tracking -->
           <div class="showcase-feature-card">
-            <div class="feature-icon-circle icon-green">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon">
-                <rect x="2" y="4" width="20" height="16" rx="2" ry="2"/>
-                <line x1="2" y1="10" x2="22" y2="10"/>
-              </svg>
-            </div>
-            <div class="showcase-feature-card-content">
-              <h3 class="showcase-feature-title">Payment Tracking</h3>
-              <p class="showcase-feature-desc">Never miss a rent payment again with smart reminders and clear payment history.</p>
-              <a href="#download" class="showcase-feature-link">Learn more &rarr;</a>
+            <div class="shimmer-wrapper">
+              <div class="shimmer-placeholder">
+                <div style="display: flex; gap: 1rem;">
+                  <div class="shimmer-icon-square"></div>
+                  <div style="flex: 1;">
+                    <div class="shimmer-heading w-60"></div>
+                    <div class="shimmer-text w-100"></div>
+                    <div class="shimmer-text w-40"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="shimmer-real-content">
+                <div class="feature-icon-circle icon-green">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon">
+                    <rect x="2" y="4" width="20" height="16" rx="2" ry="2"/>
+                    <line x1="2" y1="10" x2="22" y2="10"/>
+                  </svg>
+                </div>
+                <div class="showcase-feature-card-content">
+                  <h3 class="showcase-feature-title">Payment Tracking</h3>
+                  <p class="showcase-feature-desc">Never miss a rent payment again with smart reminders and clear payment history.</p>
+                  <a href="#download" class="showcase-feature-link">Learn more &rarr;</a>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Tenant Management -->
           <div class="showcase-feature-card">
-            <div class="feature-icon-circle icon-blue">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon">
-                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                <circle cx="12" cy="7" r="4"/>
-              </svg>
-            </div>
-            <div class="showcase-feature-card-content">
-              <h3 class="showcase-feature-title">Tenant Management</h3>
-              <p class="showcase-feature-desc">Manage all tenant details, ID proofs, and records securely in one place.</p>
-              <a href="#download" class="showcase-feature-link">Learn more &rarr;</a>
+            <div class="shimmer-wrapper">
+              <div class="shimmer-placeholder">
+                <div style="display: flex; gap: 1rem;">
+                  <div class="shimmer-icon-square"></div>
+                  <div style="flex: 1;">
+                    <div class="shimmer-heading w-60"></div>
+                    <div class="shimmer-text w-100"></div>
+                    <div class="shimmer-text w-40"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="shimmer-real-content">
+                <div class="feature-icon-circle icon-blue">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                    <circle cx="12" cy="7" r="4"/>
+                  </svg>
+                </div>
+                <div class="showcase-feature-card-content">
+                  <h3 class="showcase-feature-title">Tenant Management</h3>
+                  <p class="showcase-feature-desc">Manage all tenant details, ID proofs, and records securely in one place.</p>
+                  <a href="#download" class="showcase-feature-link">Learn more &rarr;</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <!-- Center Phone Mockup Column -->
-        <div class="features-phone-mockup">
+        <div class="features-phone-mockup shimmer-overlay-container">
           <img src="/assets/images/features/features.png" alt="ZUZUStay Smartphone Features Overview">
         </div>
 
@@ -289,46 +456,88 @@
         <div class="features-column">
           <!-- 24/7 Support Desk -->
           <div class="showcase-feature-card">
-            <div class="feature-icon-circle icon-orange">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon">
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-              </svg>
-            </div>
-            <div class="showcase-feature-card-content">
-              <h3 class="showcase-feature-title">24/7 Support Desk</h3>
-              <p class="showcase-feature-desc">Access round-the-clock premium customer assistance for setup, migrations, and operations.</p>
-              <a href="#download" class="showcase-feature-link">Learn more &rarr;</a>
+            <div class="shimmer-wrapper">
+              <div class="shimmer-placeholder">
+                <div style="display: flex; gap: 1rem;">
+                  <div class="shimmer-icon-square"></div>
+                  <div style="flex: 1;">
+                    <div class="shimmer-heading w-60"></div>
+                    <div class="shimmer-text w-100"></div>
+                    <div class="shimmer-text w-40"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="shimmer-real-content">
+                <div class="feature-icon-circle icon-orange">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                  </svg>
+                </div>
+                <div class="showcase-feature-card-content">
+                  <h3 class="showcase-feature-title">24/7 Support Desk</h3>
+                  <p class="showcase-feature-desc">Access round-the-clock premium customer assistance for setup, migrations, and operations.</p>
+                  <a href="#download" class="showcase-feature-link">Learn more &rarr;</a>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Reports & Analytics -->
           <div class="showcase-feature-card">
-            <div class="feature-icon-circle icon-purple">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon">
-                <line x1="18" y1="20" x2="18" y2="10"/>
-                <line x1="12" y1="20" x2="12" y2="4"/>
-                <line x1="6" y1="20" x2="6" y2="14"/>
-              </svg>
-            </div>
-            <div class="showcase-feature-card-content">
-              <h3 class="showcase-feature-title">Reports & Analytics</h3>
-              <p class="showcase-feature-desc">Get powerful insights into rent, dues, and occupancy to make better business decisions.</p>
-              <a href="#download" class="showcase-feature-link">Learn more &rarr;</a>
+            <div class="shimmer-wrapper">
+              <div class="shimmer-placeholder">
+                <div style="display: flex; gap: 1rem;">
+                  <div class="shimmer-icon-square"></div>
+                  <div style="flex: 1;">
+                    <div class="shimmer-heading w-60"></div>
+                    <div class="shimmer-text w-100"></div>
+                    <div class="shimmer-text w-40"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="shimmer-real-content">
+                <div class="feature-icon-circle icon-purple">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon">
+                    <line x1="18" y1="20" x2="18" y2="10"/>
+                    <line x1="12" y1="20" x2="12" y2="4"/>
+                    <line x1="6" y1="20" x2="6" y2="14"/>
+                  </svg>
+                </div>
+                <div class="showcase-feature-card-content">
+                  <h3 class="showcase-feature-title">Reports & Analytics</h3>
+                  <p class="showcase-feature-desc">Get powerful insights into rent, dues, and occupancy to make better business decisions.</p>
+                  <a href="#download" class="showcase-feature-link">Learn more &rarr;</a>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Tenant Blocklist -->
           <div class="showcase-feature-card">
-            <div class="feature-icon-circle icon-red">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon">
-                <circle cx="12" cy="12" r="10"/>
-                <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/>
-              </svg>
-            </div>
-            <div class="showcase-feature-card-content">
-              <h3 class="showcase-feature-title">Tenant Blocklist</h3>
-              <p class="showcase-feature-desc">Block troublesome tenants and protect your PG from repeat issues in the future.</p>
-              <a href="#download" class="showcase-feature-link">Learn more &rarr;</a>
+            <div class="shimmer-wrapper">
+              <div class="shimmer-placeholder">
+                <div style="display: flex; gap: 1rem;">
+                  <div class="shimmer-icon-square"></div>
+                  <div style="flex: 1;">
+                    <div class="shimmer-heading w-60"></div>
+                    <div class="shimmer-text w-100"></div>
+                    <div class="shimmer-text w-40"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="shimmer-real-content">
+                <div class="feature-icon-circle icon-red">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/>
+                  </svg>
+                </div>
+                <div class="showcase-feature-card-content">
+                  <h3 class="showcase-feature-title">Tenant Blocklist</h3>
+                  <p class="showcase-feature-desc">Block troublesome tenants and protect your PG from repeat issues in the future.</p>
+                  <a href="#download" class="showcase-feature-link">Learn more &rarr;</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -362,7 +571,7 @@
 
       <!-- App Interface Frame -->
       <div class="showcase-mockup-wrapper">
-        <div class="showcase-browser-frame">
+        <div class="showcase-browser-frame shimmer-overlay-container">
           <img src="/assets/images/Interactive/properties.png" alt="ZUZUStay Properties screen preview" class="showcase-screen-img active" id="showcase-properties">
           <img src="/assets/images/Interactive/dashboard.png" alt="ZUZUStay Dashboard screen preview" class="showcase-screen-img" id="showcase-dashboard">
           <img src="/assets/images/Interactive/rooms_beds.png" alt="ZUZUStay Rooms & Beds screen preview" class="showcase-screen-img" id="showcase-rooms">
@@ -389,9 +598,18 @@
         <div class="timeline-step">
           <div class="timeline-dot"></div>
           <div class="timeline-card glass-card">
-            <div class="timeline-step-num">Step 1</div>
-            <h3 class="timeline-step-title">Download ZUZUStay</h3>
-            <p class="timeline-step-desc">Get the mobile application on your iOS or Android device from the app stores.</p>
+            <div class="shimmer-wrapper">
+              <div class="shimmer-placeholder">
+                <div class="shimmer-badge"></div>
+                <div class="shimmer-heading w-60"></div>
+                <div class="shimmer-text w-90"></div>
+              </div>
+              <div class="shimmer-real-content">
+                <div class="timeline-step-num">Step 1</div>
+                <h3 class="timeline-step-title">Download ZUZUStay</h3>
+                <p class="timeline-step-desc">Get the mobile application on your iOS or Android device from the app stores.</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -399,9 +617,18 @@
         <div class="timeline-step">
           <div class="timeline-dot"></div>
           <div class="timeline-card glass-card">
-            <div class="timeline-step-num">Step 2</div>
-            <h3 class="timeline-step-title">Login with Mobile</h3>
-            <p class="timeline-step-desc">Input your phone number to initialize authentication securely without complex passwords.</p>
+            <div class="shimmer-wrapper">
+              <div class="shimmer-placeholder">
+                <div class="shimmer-badge"></div>
+                <div class="shimmer-heading w-60"></div>
+                <div class="shimmer-text w-90"></div>
+              </div>
+              <div class="shimmer-real-content">
+                <div class="timeline-step-num">Step 2</div>
+                <h3 class="timeline-step-title">Login with Mobile</h3>
+                <p class="timeline-step-desc">Input your phone number to initialize authentication securely without complex passwords.</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -409,9 +636,18 @@
         <div class="timeline-step">
           <div class="timeline-dot"></div>
           <div class="timeline-card glass-card">
-            <div class="timeline-step-num">Step 3</div>
-            <h3 class="timeline-step-title">Verify via OTP</h3>
-            <p class="timeline-step-desc">Confirm the verification code texted to your phone to establish instant access.</p>
+            <div class="shimmer-wrapper">
+              <div class="shimmer-placeholder">
+                <div class="shimmer-badge"></div>
+                <div class="shimmer-heading w-60"></div>
+                <div class="shimmer-text w-90"></div>
+              </div>
+              <div class="shimmer-real-content">
+                <div class="timeline-step-num">Step 3</div>
+                <h3 class="timeline-step-title">Verify via OTP</h3>
+                <p class="timeline-step-desc">Confirm the verification code texted to your phone to establish instant access.</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -419,9 +655,18 @@
         <div class="timeline-step">
           <div class="timeline-dot"></div>
           <div class="timeline-card glass-card">
-            <div class="timeline-step-num">Step 4</div>
-            <h3 class="timeline-step-title">Create Owner Profile</h3>
-            <p class="timeline-step-desc">Set up your business name, logo, contact points, and billing preferences.</p>
+            <div class="shimmer-wrapper">
+              <div class="shimmer-placeholder">
+                <div class="shimmer-badge"></div>
+                <div class="shimmer-heading w-60"></div>
+                <div class="shimmer-text w-90"></div>
+              </div>
+              <div class="shimmer-real-content">
+                <div class="timeline-step-num">Step 4</div>
+                <h3 class="timeline-step-title">Create Owner Profile</h3>
+                <p class="timeline-step-desc">Set up your business name, logo, contact points, and billing preferences.</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -429,9 +674,18 @@
         <div class="timeline-step">
           <div class="timeline-dot"></div>
           <div class="timeline-card glass-card">
-            <div class="timeline-step-num">Step 5</div>
-            <h3 class="timeline-step-title">Add Property</h3>
-            <p class="timeline-step-desc">Add PG buildings, hotel structures, or rental houses with location parameters.</p>
+            <div class="shimmer-wrapper">
+              <div class="shimmer-placeholder">
+                <div class="shimmer-badge"></div>
+                <div class="shimmer-heading w-60"></div>
+                <div class="shimmer-text w-90"></div>
+              </div>
+              <div class="shimmer-real-content">
+                <div class="timeline-step-num">Step 5</div>
+                <h3 class="timeline-step-title">Add Property</h3>
+                <p class="timeline-step-desc">Add PG buildings, hotel structures, or rental houses with location parameters.</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -439,9 +693,18 @@
         <div class="timeline-step">
           <div class="timeline-dot"></div>
           <div class="timeline-card glass-card">
-            <div class="timeline-step-num">Step 6</div>
-            <h3 class="timeline-step-title">Add Rooms</h3>
-            <p class="timeline-step-desc">Define room configurations, pricing matrices, share rules, and amenities tags.</p>
+            <div class="shimmer-wrapper">
+              <div class="shimmer-placeholder">
+                <div class="shimmer-badge"></div>
+                <div class="shimmer-heading w-60"></div>
+                <div class="shimmer-text w-90"></div>
+              </div>
+              <div class="shimmer-real-content">
+                <div class="timeline-step-num">Step 6</div>
+                <h3 class="timeline-step-title">Add Rooms</h3>
+                <p class="timeline-step-desc">Define room configurations, pricing matrices, share rules, and amenities tags.</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -449,9 +712,18 @@
         <div class="timeline-step">
           <div class="timeline-dot"></div>
           <div class="timeline-card glass-card">
-            <div class="timeline-step-num">Step 7</div>
-            <h3 class="timeline-step-title">Register Tenants</h3>
-            <p class="timeline-step-desc">Add occupancy logs, assign beds to tenants, and set monthly rent dates.</p>
+            <div class="shimmer-wrapper">
+              <div class="shimmer-placeholder">
+                <div class="shimmer-badge"></div>
+                <div class="shimmer-heading w-60"></div>
+                <div class="shimmer-text w-90"></div>
+              </div>
+              <div class="shimmer-real-content">
+                <div class="timeline-step-num">Step 7</div>
+                <h3 class="timeline-step-title">Register Tenants</h3>
+                <p class="timeline-step-desc">Add occupancy logs, assign beds to tenants, and set monthly rent dates.</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -459,9 +731,18 @@
         <div class="timeline-step">
           <div class="timeline-dot"></div>
           <div class="timeline-card glass-card">
-            <div class="timeline-step-num">Step 8</div>
-            <h3 class="timeline-step-title">Start Managing</h3>
-            <p class="timeline-step-desc">Track dues, automate rent alerts, log expenses, and see your business grow.</p>
+            <div class="shimmer-wrapper">
+              <div class="shimmer-placeholder">
+                <div class="shimmer-badge"></div>
+                <div class="shimmer-heading w-60"></div>
+                <div class="shimmer-text w-90"></div>
+              </div>
+              <div class="shimmer-real-content">
+                <div class="timeline-step-num">Step 8</div>
+                <h3 class="timeline-step-title">Start Managing</h3>
+                <p class="timeline-step-desc">Track dues, automate rent alerts, log expenses, and see your business grow.</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -485,7 +766,6 @@
     </div>
   </section>
 
-
   <!-- Testimonials Section -->
   <section id="testimonials" class="reveal-on-scroll">
     <div class="container">
@@ -499,45 +779,85 @@
         <div class="testimonials-slider" id="testimonials-slider">
           <!-- PG Owner -->
           <div class="testimonial-card glass-card">
-            <div class="testimonial-stars">★★★★★</div>
-            <p class="testimonial-quote">"ZUZUStay completely simplified rent tracking for my PG. The automatic reminders save me hours of follow-ups."</p>
-            <div class="testimonial-author">
-              <div class="testimonial-author-info">
-                <span class="testimonial-name">Rohan Sharma</span>
-                <span class="testimonial-role">PG Owner (120 beds), Bangalore</span>
+            <div class="shimmer-wrapper">
+              <div class="shimmer-placeholder">
+                <div class="shimmer-badge"></div>
+                <div class="shimmer-text w-100"></div>
+                <div class="shimmer-text w-80"></div>
+                <div class="shimmer-heading w-40"></div>
+              </div>
+              <div class="shimmer-real-content">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-quote">"ZUZUStay completely simplified rent tracking for my PG. The automatic reminders save me hours of follow-ups."</p>
+                <div class="testimonial-author">
+                  <div class="testimonial-author-info">
+                    <span class="testimonial-name">Rohan Sharma</span>
+                    <span class="testimonial-role">PG Owner (120 beds), Bangalore</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <!-- Hotel Manager -->
           <div class="testimonial-card glass-card">
-            <div class="testimonial-stars">★★★★★</div>
-            <p class="testimonial-quote">"Managing room allocations across two hotels is now effortless. Highly recommended platform."</p>
-            <div class="testimonial-author">
-              <div class="testimonial-author-info">
-                <span class="testimonial-name">Karan Mehta</span>
-                <span class="testimonial-role">Hotel General Manager, Goa</span>
+            <div class="shimmer-wrapper">
+              <div class="shimmer-placeholder">
+                <div class="shimmer-badge"></div>
+                <div class="shimmer-text w-100"></div>
+                <div class="shimmer-text w-80"></div>
+                <div class="shimmer-heading w-40"></div>
+              </div>
+              <div class="shimmer-real-content">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-quote">"Managing room allocations across two hotels is now effortless. Highly recommended platform."</p>
+                <div class="testimonial-author">
+                  <div class="testimonial-author-info">
+                    <span class="testimonial-name">Karan Mehta</span>
+                    <span class="testimonial-role">Hotel General Manager, Goa</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <!-- Resort Owner -->
           <div class="testimonial-card glass-card">
-            <div class="testimonial-stars">★★★★★</div>
-            <p class="testimonial-quote">"The multi-property support works flawlessly. I can see my revenue and occupancy levels on a single screen."</p>
-            <div class="testimonial-author">
-              <div class="testimonial-author-info">
-                <span class="testimonial-name">Priya Patel</span>
-                <span class="testimonial-role">Resort Operator, Munnar</span>
+            <div class="shimmer-wrapper">
+              <div class="shimmer-placeholder">
+                <div class="shimmer-badge"></div>
+                <div class="shimmer-text w-100"></div>
+                <div class="shimmer-text w-80"></div>
+                <div class="shimmer-heading w-40"></div>
+              </div>
+              <div class="shimmer-real-content">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-quote">"The multi-property support works flawlessly. I can see my revenue and occupancy levels on a single screen."</p>
+                <div class="testimonial-author">
+                  <div class="testimonial-author-info">
+                    <span class="testimonial-name">Priya Patel</span>
+                    <span class="testimonial-role">Resort Operator, Munnar</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <!-- Building Owner -->
           <div class="testimonial-card glass-card">
-            <div class="testimonial-stars">★★★★★</div>
-            <p class="testimonial-quote">"Zero cost and premium features. ZUZUStay is a game changer for rental operators."</p>
-            <div class="testimonial-author">
-              <div class="testimonial-author-info">
-                <span class="testimonial-name">Vikram Sen</span>
-                <span class="testimonial-role">Commercial Building Owner, Pune</span>
+            <div class="shimmer-wrapper">
+              <div class="shimmer-placeholder">
+                <div class="shimmer-badge"></div>
+                <div class="shimmer-text w-100"></div>
+                <div class="shimmer-text w-80"></div>
+                <div class="shimmer-heading w-40"></div>
+              </div>
+              <div class="shimmer-real-content">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-quote">"Zero cost and premium features. ZUZUStay is a game changer for rental operators."</p>
+                <div class="testimonial-author">
+                  <div class="testimonial-author-info">
+                    <span class="testimonial-name">Vikram Sen</span>
+                    <span class="testimonial-role">Commercial Building Owner, Pune</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -563,79 +883,126 @@
       <div class="faq-list">
         <!-- FAQ 1 -->
         <div class="faq-item glass-card">
-          <button class="faq-question">
-            <span class="faq-question-title">What is ZUZUStay?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>ZUZUStay is a premium property management platform designed to help PG owners, building managers, hotel hosts, and landlords digitize and automate daily operations, tenant communications, and rent collection records.</p>
+          <div class="shimmer-wrapper">
+            <div class="shimmer-placeholder">
+              <div class="shimmer-heading w-80"></div>
+            </div>
+            <div class="shimmer-real-content">
+              <button class="faq-question">
+                <span class="faq-question-title">What is ZUZUStay?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>ZUZUStay is a premium property management platform designed to help PG owners, building managers, hotel hosts, and landlords digitize and automate daily operations, tenant communications, and rent collection records.</p>
+              </div>
+            </div>
           </div>
         </div>
         <!-- FAQ 2 -->
         <div class="faq-item glass-card">
-          <button class="faq-question">
-            <span class="faq-question-title">Who can use ZUZUStay?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>ZUZUStay is built for PG Owners, Building Owners, Hotel Owners, Resort Owners, Hostel Owners, and general Rental Property Owners looking to improve their administrative workflow.</p>
+          <div class="shimmer-wrapper">
+            <div class="shimmer-placeholder">
+              <div class="shimmer-heading w-80"></div>
+            </div>
+            <div class="shimmer-real-content">
+              <button class="faq-question">
+                <span class="faq-question-title">Who can use ZUZUStay?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>ZUZUStay is built for PG Owners, Building Owners, Hotel Owners, Resort Owners, Hostel Owners, and general Rental Property Owners looking to improve their administrative workflow.</p>
+              </div>
+            </div>
           </div>
         </div>
         <!-- FAQ 3 -->
         <div class="faq-item glass-card">
-          <button class="faq-question">
-            <span class="faq-question-title">Is there a free trial for ZUZUStay?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Yes, ZUZUStay starts with a 3-month free trial tier activated automatically upon signup. No credit card is required. After the 3-month trial, simple pricing plans are applicable for continued access to the property management platform.</p>
+          <div class="shimmer-wrapper">
+            <div class="shimmer-placeholder">
+              <div class="shimmer-heading w-80"></div>
+            </div>
+            <div class="shimmer-real-content">
+              <button class="faq-question">
+                <span class="faq-question-title">Is there a free trial for ZUZUStay?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes, ZUZUStay starts with a 3-month free trial tier activated automatically upon signup. No credit card is required. After the 3-month trial, simple pricing plans are applicable for continued access to the property management platform.</p>
+              </div>
+            </div>
           </div>
         </div>
         <!-- FAQ 4 -->
         <div class="faq-item glass-card">
-          <button class="faq-question">
-            <span class="faq-question-title">Can I manage multiple properties?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Absolutely. ZUZUStay provides native multi-property configurations, allowing you to control different properties and areas from one single account dashboard.</p>
+          <div class="shimmer-wrapper">
+            <div class="shimmer-placeholder">
+              <div class="shimmer-heading w-80"></div>
+            </div>
+            <div class="shimmer-real-content">
+              <button class="faq-question">
+                <span class="faq-question-title">Can I manage multiple properties?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Absolutely. ZUZUStay provides native multi-property configurations, allowing you to control different properties and areas from one single account dashboard.</p>
+              </div>
+            </div>
           </div>
         </div>
         <!-- FAQ 5 -->
         <div class="faq-item glass-card">
-          <button class="faq-question">
-            <span class="faq-question-title">How secure is my data?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Your data is highly secure. We use enterprise-grade cloud databases, strict encryption channels for information transfers, and perform automatic backups to keep data protected.</p>
+          <div class="shimmer-wrapper">
+            <div class="shimmer-placeholder">
+              <div class="shimmer-heading w-80"></div>
+            </div>
+            <div class="shimmer-real-content">
+              <button class="faq-question">
+                <span class="faq-question-title">How secure is my data?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Your data is highly secure. We use enterprise-grade cloud databases, strict encryption channels for information transfers, and perform automatic backups to keep data protected.</p>
+              </div>
+            </div>
           </div>
         </div>
         <!-- FAQ 6 -->
         <div class="faq-item glass-card">
-          <button class="faq-question">
-            <span class="faq-question-title">How do I add rooms and tenants?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Verify via OTP and complete your business profile. Add a property (e.g., 'tg' in our dashboard), define rooms and beds availability, and register tenants. The app automatically calculates your Monthly Occupancy rates and statistics based on active tenant records.</p>
+          <div class="shimmer-wrapper">
+            <div class="shimmer-placeholder">
+              <div class="shimmer-heading w-80"></div>
+            </div>
+            <div class="shimmer-real-content">
+              <button class="faq-question">
+                <span class="faq-question-title">How do I add rooms and tenants?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Verify via OTP and complete your business profile. Add a property (e.g., 'tg' in our dashboard), define rooms and beds availability, and register tenants. The app automatically calculates your Monthly Occupancy rates and statistics based on active tenant records.</p>
+              </div>
+            </div>
           </div>
         </div>
         <!-- FAQ 7 -->
         <div class="faq-item glass-card">
-          <button class="faq-question">
-            <span class="faq-question-title">Do you provide support?</span>
-            <span class="faq-icon">+</span>
-          </button>
-          <div class="faq-answer">
-            <p>Yes, we provide 24x7 support. If you face any issues while adding parameters or checking dashboards, contact us at admin@zuzustay.com and our team will assist you immediately.</p>
+          <div class="shimmer-wrapper">
+            <div class="shimmer-placeholder">
+              <div class="shimmer-heading w-80"></div>
+            </div>
+            <div class="shimmer-real-content">
+              <button class="faq-question">
+                <span class="faq-question-title">Do you provide support?</span>
+                <span class="faq-icon">+</span>
+              </button>
+              <div class="faq-answer">
+                <p>Yes, we provide 24x7 support. If you face any issues while adding parameters or checking dashboards, contact us at admin@zuzustay.com and our team will assist you immediately.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-
 
   <!-- Upgraded Footer -->
   <footer class="site-footer">
@@ -689,7 +1056,8 @@
   </footer>
 
   <!-- JS Logic -->
-  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/shimmer.js?v=1.0"></script>
+  <script src="/assets/js/main.js?v=1.5"></script>
 </body>
 
 </html>
