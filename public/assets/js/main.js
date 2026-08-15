@@ -9,8 +9,8 @@ window.addEventListener('load', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  // ZUZUStay Interactive Animation Hook
-  console.log('ZUZUStay Coming Soon page loaded successfully.');
+  // Naadhe Interactive Animation Hook
+  console.log('Naadhe Coming Soon page loaded successfully.');
 });
 
 
