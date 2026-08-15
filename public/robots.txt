@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://zuzustay.com/sitemap.xml
+Sitemap: https://naadhe.com/sitemap.xml

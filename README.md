@@ -1,11 +1,11 @@
-# ZUZUStay - Smart PG & Rental Property Management
+# Naadhe - Smart PG & Rental Property Management
 
-A premium, responsive, minimalist "Coming Soon" landing page for **ZUZUStay** (Smart PG & Rental Property Management platform). Built using pure semantic HTML, vanilla CSS (HSL design variables, glassmorphism, responsive grid flex layouts), and vanilla JS. Configured for quick local development and deployment via Firebase Hosting.
+A premium, responsive, minimalist "Coming Soon" landing page for **Naadhe** (Smart PG & Rental Property Management platform). Built using pure semantic HTML, vanilla CSS (HSL design variables, glassmorphism, responsive grid flex layouts), and vanilla JS. Configured for quick local development and deployment via Firebase Hosting.
 
 ## Project Structure
 
 ```text
-zuzustay-website/
+naadhe-website/
 ├── firebase.json              # Firebase Hosting configuration
 ├── .firebaserc                # Firebase target default project
 ├── README.md                  # Development guide
@@ -25,7 +25,7 @@ zuzustay-website/
         ├── js/
         │   └── main.js        # Dynamic interactive hooks
         ├── images/
-        │   ├── logo.svg       # ZUZUStay logo
+        │   ├── logo.svg       # Naadhe logo
         │   ├── bg.webp        # Linked Visual fallback
         │   └── favicon.ico    # App icon badge
         └── fonts/             # Font storage directory
