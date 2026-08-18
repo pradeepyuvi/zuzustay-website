@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   faqQuestions.forEach(question => {
     question.addEventListener('click', () => {
-      const faqItem = question.parentElement;
+      const faqItem = question.closest('.faq-item');
       const isActive = faqItem.classList.contains('active');
 
       // Close all active FAQs first for accordion behavior
