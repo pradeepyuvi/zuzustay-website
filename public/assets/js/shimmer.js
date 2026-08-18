@@ -1,5 +1,5 @@
 /**
- * ZUZUStay Shimmer Loading Manager with Artificial Testing Delay
+ * Naadhe Shimmer Loading Manager with Artificial Testing Delay
  * Controls shimmer skeleton transitions and artificial delay configuration.
  */
 

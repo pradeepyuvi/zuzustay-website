@@ -1,4 +1,4 @@
-// ZUZUStay Core Logic
+// Naadhe Core Logic
 
 // 1. Preloader Screen Timeout
 window.addEventListener('load', () => {
@@ -11,7 +11,7 @@ window.addEventListener('load', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  console.log('ZUZUStay premium platform homepage initialized successfully.');
+  console.log('Naadhe premium platform homepage initialized successfully.');
 
   // 2. Navigation Scroll Effect
   const navbar = document.getElementById('navbar');
