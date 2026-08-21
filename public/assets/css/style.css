@@ -1351,6 +1351,14 @@ section {
   -webkit-overflow-scrolling: touch;
 }
 
+.showcase-tabs::-webkit-scrollbar {
+  height: 4px;
+}
+.showcase-tabs::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
 .showcase-tab {
   border: none;
   background: none;
@@ -2280,6 +2288,7 @@ section {
 
   .showcase-tabs {
     justify-content: flex-start;
+    padding-right: 2.5rem; /* Hint scroll area */
   }
 
   .download-actions {
@@ -2308,7 +2317,7 @@ section {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    background: var(--theme-card-bg);
+    background: var(--theme-bg); /* Solid background to prevent overlap */
     border: 1px solid var(--theme-card-border);
     border-radius: var(--border-radius-md);
     flex-direction: column;
@@ -2316,6 +2325,7 @@ section {
     gap: 1.5rem;
     text-align: center;
     box-shadow: var(--shadow-lg);
+    z-index: 1000; /* Ensure it stays above hero content */
   }
 
   .navbar-menu.active {
@@ -2324,6 +2334,21 @@ section {
 
   .mobile-nav-toggle {
     display: block;
+  }
+
+  .navbar-cta {
+    display: none; /* Hide on mobile to avoid overlapping toggle */
+  }
+
+  .footer-brand {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo-container {
+    justify-content: center;
   }
 }
 
@@ -3461,8 +3486,11 @@ section {
 
 /* App Store & Play Store Image Badge Links */
 .store-badge-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   height: 48px;
+  width: 156px; /* Strict matching sizes */
   transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.3s ease, box-shadow 0.3s ease;
   border-radius: 8px;
   overflow: hidden;
@@ -3481,7 +3509,7 @@ section {
 
 .store-badge-img {
   height: 100%;
-  width: auto;
+  width: 100%; /* Stretch slightly to fit identical dimensions */
   display: block;
 }
 
