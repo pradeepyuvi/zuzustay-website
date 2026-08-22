@@ -1,10 +1,12 @@
+// Naadhe Core Logic
+
+// 1. Preloader Screen Timeout
 window.addEventListener('load', () => {
   const preloader = document.getElementById('preloader');
   if (preloader) {
-    // Deliberate 1.2s preloader show time for premium feel
     setTimeout(() => {
       preloader.classList.add('fade-out');
-    }, 1200);
+    }, 600);
   }
 });
 
