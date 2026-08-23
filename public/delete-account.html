@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Request account and data deletion for your Naadhe account. Learn the deletion steps or send a direct request.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Delete Account Request - Naadhe">
+  <meta property="og:description"
+    content="Request account and data deletion for your Naadhe account.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://naadhe.com/delete-account.html">
+
+  <title>Delete Account Request - Naadhe</title>
+  <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/logo.svg?v=3">
+
+  <!-- Core & Legal Stylesheets -->
+  <link rel="stylesheet" href="/assets/css/shimmer.css?v=1.0">
+  <link rel="stylesheet" href="/assets/css/legal.css?v=5">
+  <style>
+    .deletion-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 2.5rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      margin-top: 1.5rem;
+    }
+
+    .steps-box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .steps-heading {
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #0284c7;
+      margin-bottom: 1rem;
+    }
+
+    .steps-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .steps-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.85rem;
+      font-size: 1rem;
+      color: #334155;
+      line-height: 1.5;
+    }
+
+    .step-num {
+      background: #0284c7;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.8rem;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .process-note {
+      margin-top: 1.25rem;
+      padding-top: 1rem;
+      border-top: 1px dashed #cbd5e1;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #0369a1;
+      text-align: center;
+    }
+
+    .form-section {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .form-label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #1e293b;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      color: #0f172a;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    .form-input:focus {
+      border-color: #0284c7;
+      box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.75rem;
+    }
+
+    .btn-send {
+      flex: 1;
+      background: #dc2626;
+      color: #ffffff;
+      border: none;
+      padding: 0.85rem 1.5rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      transition: background 0.2s ease, transform 0.1s ease;
+    }
+
+    .btn-send:hover {
+      background: #b91c1c;
+      transform: translateY(-1px);
+    }
+
+    .btn-cancel {
+      flex: 1;
+      background: #f1f5f9;
+      color: #334155;
+      border: 1px solid #cbd5e1;
+      padding: 0.85rem 1.5rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+
+    .btn-cancel:hover {
+      background: #e2e8f0;
+      color: #0f172a;
+    }
+
+    .status-msg {
+      margin-top: 1rem;
+      padding: 0.85rem 1rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      display: none;
+    }
+
+    .status-msg.success {
+      display: block;
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      color: #166534;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="legal-container">
+
+    <!-- Top Navigation Header -->
+    <header>
+      <div class="shimmer-wrapper">
+        <div class="shimmer-placeholder" style="flex-direction: row; justify-content: space-between; align-items: center;">
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <div class="shimmer-avatar" style="width: 32px; height: 32px;"></div>
+            <div class="shimmer-heading w-40" style="margin:0;"></div>
+          </div>
+          <div class="shimmer-btn" style="height: 36px; width: 120px;"></div>
+        </div>
+        <div class="shimmer-real-content" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+          <a href="/" class="brand-title">
+            <img src="/assets/images/logo.svg" alt="Naadhe Logo" class="logo-icon">
+            <span>Naadhe</span>
+          </a>
+          <a href="/" class="back-btn" id="back-to-home-top">Back to Home</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="content-section">
+      <div class="shimmer-wrapper">
+        <div class="shimmer-placeholder">
+          <div class="shimmer-title w-70"></div>
+          <div class="shimmer-text w-100"></div>
+          <div class="shimmer-text w-90"></div>
+        </div>
+        <div class="shimmer-real-content">
+          <h1>Account Deletion Request</h1>
+          <p>If you wish to delete your Naadhe account and associated data, please follow the steps outlined below within the Naadhe mobile application.</p>
+        </div>
+      </div>
+
+      <div class="deletion-card">
+        <div class="shimmer-wrapper">
+          <div class="shimmer-placeholder">
+            <div class="shimmer-heading w-50"></div>
+            <div class="shimmer-text w-100"></div>
+            <div class="shimmer-text w-90"></div>
+            <div class="shimmer-text w-80"></div>
+            <div class="shimmer-text w-85"></div>
+            <div class="shimmer-btn w-50" style="margin: 1rem auto 0 auto;"></div>
+          </div>
+          <div class="shimmer-real-content">
+            <!-- Mobile App Steps -->
+            <div class="steps-box" style="margin-bottom: 1.5rem;">
+              <div class="steps-heading">Mobile App Account Deletion Process</div>
+              <ol class="steps-list">
+                <li>
+                  <span class="step-num">1</span>
+                  <span>Open Naadhe mobile app</span>
+                </li>
+                <li>
+                  <span class="step-num">2</span>
+                  <span>Login with registered Mobile Number and OTP</span>
+                </li>
+                <li>
+                  <span class="step-num">3</span>
+                  <span>Click Profile</span>
+                </li>
+                <li>
+                  <span class="step-num">4</span>
+                  <span>Click Delete Account Request</span>
+                </li>
+              </ol>
+              <div class="process-note">
+                This is the Delete Account Request process.
+              </div>
+            </div>
+
+            <div class="action-buttons" style="justify-content: center; margin-top: 1.5rem;">
+              <a href="/" class="btn-cancel" style="max-width: 220px;">Cancel (Back to Home)</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <div style="margin-bottom: 0.75rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="/" style="color: #64748b; text-decoration: none;">Home</a>
+        <a href="/privacy-policy.html" style="color: #64748b; text-decoration: none;">Privacy Policy</a>
+        <a href="/terms-and-conditions.html" style="color: #64748b; text-decoration: none;">Terms & Conditions</a>
+        <a href="/delete-account.html" style="color: #0284c7; text-decoration: none; font-weight: 500;">Delete Account Request</a>
+      </div>
+      &copy; 2026 Naadhe. All rights reserved.
+    </footer>
+
+  </div>
+
+  <script src="/assets/js/shimmer.js?v=1.0"></script>
+</body>
+
+</html>
