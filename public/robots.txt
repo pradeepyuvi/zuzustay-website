@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://naadhe.com/sitemap.xml
