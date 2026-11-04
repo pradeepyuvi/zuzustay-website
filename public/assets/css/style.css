@@ -1102,6 +1102,10 @@ section {
   justify-content: center;
   align-items: center;
   perspective: 1000px;
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .phone-mockup-wrapper {
@@ -1143,11 +1147,11 @@ section {
 /* Floating widgets overlay */
 .floating-card {
   position: absolute;
-  background: rgba(11, 25, 40, 0.75);
+  background: rgba(11, 25, 40, 0.82);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-radius: 16px;
-  padding: 0.9rem 1.15rem;
+  padding: 0.85rem 1.15rem;
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45), 0 0 20px rgba(20, 216, 255, 0.12);
   display: flex;
   flex-direction: column;
@@ -1155,9 +1159,13 @@ section {
   animation: floatCard 6s infinite ease-in-out;
   border: 1px solid rgba(255, 255, 255, 0.14);
   z-index: 10;
-  width: 175px;
+  width: auto;
+  min-width: 160px;
+  max-width: 195px;
+  box-sizing: border-box;
   color: var(--white);
   transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 .floating-card:hover {
@@ -1178,21 +1186,21 @@ section {
 }
 
 .card-occupancy {
-  left: -0.5rem;
+  left: -0.75rem;
   top: 2rem;
   border-color: rgba(20, 216, 255, 0.3);
   animation-delay: 0s;
 }
 
 .card-revenue {
-  right: -0.5rem;
+  right: -0.75rem;
   top: 7rem;
   border-color: rgba(10, 114, 138, 0.4);
   animation-delay: 2s;
 }
 
 .card-activity {
-  left: 0.5rem;
+  left: 0.25rem;
   bottom: 2.5rem;
   border-color: rgba(20, 216, 255, 0.25);
   animation-delay: 4s;
@@ -1219,13 +1227,25 @@ section {
   font-weight: 800;
   line-height: 1.1;
   color: #ffffff;
+  word-break: break-word;
 }
 
 .floating-card-label {
   font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.8);
   font-weight: 500;
-  white-space: nowrap;
+  white-space: normal;
+  line-height: 1.25;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+.floating-card .shimmer-real-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Property Types Section */
@@ -2158,7 +2178,9 @@ section {
   }
 
   .hero-mockup {
-    margin-top: 2rem;
+    margin: 2rem auto 0;
+    max-width: 440px;
+    width: 100%;
   }
 
   .property-grid {
@@ -2224,12 +2246,17 @@ section {
   }
 
   .hero-mockup {
-    margin-top: 1.5rem;
+    margin: 1.5rem auto 0;
+    max-width: 390px;
+    width: 100%;
   }
 
   .floating-card {
-    width: 140px;
+    width: auto;
+    min-width: 130px;
+    max-width: 165px;
     padding: 0.65rem 0.85rem;
+    border-radius: 14px;
   }
 
   .card-occupancy {
@@ -2252,7 +2279,9 @@ section {
   }
 
   .floating-card-label {
-    font-size: 0.7rem;
+    font-size: 0.72rem;
+    white-space: normal;
+    line-height: 1.25;
   }
 
   .property-grid {
@@ -2349,6 +2378,76 @@ section {
 
   .footer-logo-container {
     justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-mockup {
+    max-width: 330px;
+  }
+
+  .floating-card {
+    min-width: 115px;
+    max-width: 142px;
+    padding: 0.55rem 0.7rem;
+    border-radius: 12px;
+  }
+
+  .card-occupancy {
+    left: 0;
+    top: 1rem;
+  }
+
+  .card-revenue {
+    right: 0;
+    top: 5rem;
+  }
+
+  .card-activity {
+    left: 0.25rem;
+    bottom: 1rem;
+  }
+
+  .floating-card-badge {
+    font-size: 0.62rem;
+    padding: 0.14rem 0.45rem;
+  }
+
+  .floating-card-value {
+    font-size: 1.2rem;
+  }
+
+  .floating-card-label {
+    font-size: 0.68rem;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-mockup {
+    max-width: 290px;
+  }
+
+  .floating-card {
+    min-width: 112px;
+    max-width: 132px;
+    padding: 0.45rem 0.55rem;
+    gap: 0.2rem;
+  }
+
+  .floating-card-badge {
+    font-size: 0.56rem;
+    padding: 0.1rem 0.38rem;
+  }
+
+  .floating-card-value {
+    font-size: 1.05rem;
+  }
+
+  .floating-card-label {
+    font-size: 0.62rem;
+    line-height: 1.15;
+    word-break: break-word;
   }
 }
 
@@ -3813,88 +3912,97 @@ section {
 
 /* YouTube Tutorials Section */
 .youtube-section {
-  padding: 4rem 0;
+  padding: 5rem 0;
+  position: relative;
 }
 
 .youtube-content-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2.5rem;
   margin-top: 3rem;
+  align-items: center;
 }
 
 @media (min-width: 992px) {
   .youtube-content-wrapper {
     flex-direction: row;
     align-items: center;
+    gap: 3rem;
   }
 }
 
 .youtube-video-mockup {
   flex: 1;
+  width: 100%;
+  aspect-ratio: 1024 / 524;
   background: rgba(10, 25, 40, 0.45);
   backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: var(--border-radius-lg);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
   overflow: hidden;
   position: relative;
-  box-shadow: var(--shadow-lg);
-  aspect-ratio: 16 / 9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45), 0 0 25px rgba(20, 216, 255, 0.08);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  line-height: 0;
 }
 
-.youtube-placeholder-bg {
+.youtube-video-mockup:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 68, 68, 0.5);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55), 0 0 35px rgba(255, 0, 0, 0.3);
+}
+
+.youtube-video-link {
+  display: block;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(20, 20, 20, 0.8) 0%, rgba(40, 40, 40, 0.6) 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 0;
   position: relative;
   overflow: hidden;
 }
 
-.youtube-placeholder-bg::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.youtube-thumb-image {
   width: 100%;
   height: 100%;
-  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  aspect-ratio: 1024 / 524;
+  object-fit: contain !important;
+  display: block;
+  border-radius: 17px;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.youtube-play-btn {
-  z-index: 2;
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.youtube-play-btn:hover {
-  transform: scale(1.15);
+.youtube-video-link:hover .youtube-thumb-image {
+  transform: scale(1.02);
 }
 
 .youtube-details {
   flex: 1;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.8rem;
 }
 
 .youtube-channel-info {
   display: flex;
   align-items: center;
   gap: 1.2rem;
-  padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: var(--border-radius-md);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 1.2rem 1.5rem;
+  background: rgba(11, 25, 40, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .youtube-avatar {
-  width: 60px;
-  height: 60px;
+  width: 54px;
+  height: 54px;
   border-radius: 50%;
   background: linear-gradient(135deg, #ff0000 0%, #aa0000 100%);
   color: #fff;
@@ -3902,30 +4010,32 @@ section {
   align-items: center;
   justify-content: center;
   font-family: var(--font-display);
-  font-size: 1.8rem;
+  font-size: 1.65rem;
   font-weight: 800;
-  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+  box-shadow: 0 4px 18px rgba(255, 0, 0, 0.45);
+  flex-shrink: 0;
 }
 
 .youtube-channel-name {
   font-family: var(--font-display);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: var(--white);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.25rem;
 }
 
 .youtube-playlist-info {
-  font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .youtube-topics-list {
   list-style: none;
   padding: 0;
+  margin: 0;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 1.1rem 1.5rem;
 }
 
 @media (min-width: 576px) {
@@ -3937,24 +4047,25 @@ section {
 .youtube-topics-list li {
   display: flex;
   align-items: flex-start;
-  gap: 0.8rem;
-  color: rgba(255, 255, 255, 0.85);
+  gap: 0.75rem;
+  color: rgba(255, 255, 255, 0.88);
   font-size: 0.95rem;
-  line-height: 1.5;
+  line-height: 1.45;
 }
 
 .topic-icon {
-  color: #ff4444;
+  color: #ff3333;
   font-weight: bold;
+  font-size: 1.05rem;
   flex-shrink: 0;
-  margin-top: 2px;
+  line-height: 1.2;
 }
 
 .youtube-cta-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem 2rem;
+  padding: 0.95rem 2.2rem;
   background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
   color: #ffffff;
   font-family: var(--font-display);
@@ -3964,12 +4075,42 @@ section {
   border-radius: 50px;
   align-self: flex-start;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 20px rgba(255, 0, 0, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 24px rgba(255, 0, 0, 0.38);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .youtube-cta-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 25px rgba(255, 0, 0, 0.35);
+  box-shadow: 0 14px 30px rgba(255, 0, 0, 0.5);
   background: linear-gradient(135deg, #ff1a1a 0%, #e60000 100%);
+}
+
+@media (max-width: 768px) {
+  .youtube-section {
+    padding: 3.5rem 0;
+  }
+  .youtube-content-wrapper {
+    gap: 2rem;
+  }
+  .youtube-cta-btn {
+    width: 100%;
+    align-self: stretch;
+  }
+}
+
+[data-theme="light"] .youtube-channel-info {
+  background: rgba(0, 0, 0, 0.03);
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .youtube-channel-name {
+  color: var(--text-dark, #0b1928);
+}
+
+[data-theme="light"] .youtube-playlist-info {
+  color: #64748b;
+}
+
+[data-theme="light"] .youtube-topics-list li {
+  color: #334155;
 }
